@@ -4,15 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LEFEBVRE MARIE</title>
+    <title>Portfolio LEFEBVRE MARIE</title>
     <link href="style.css" rel="stylesheet">
     <script src="script.js" defer></script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -20,51 +18,66 @@
         <div class="nav-links">
             <ul>
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">Bienvenu</a></li>
+                <li><a href="#about">Bienvenue</a></li>
                 <li><a href="#mesTechnos">Technos</a></li>
                 <li><a href="#Projets">Réalisations</a></li>
             </ul>
         </div>
-        <i class="fa-solid fa-bars menu-hamburger" ></i>
+        <i class="fa-solid fa-bars menu-hamburger"></i>
     </nav>
     <div class="header">
         <div class="image-header">
-
+    
         </div>
         <div class="titre">
             <h2 class="titreHeader">Marie Lefebvre</h2>
-            <h1 class="titreHeader">Développeur Full Stack</h1>
+            <h1 class="titreHeader">Développeur <br id="retourPhone2" hidden>Full Stack</h1>
             <br>
-            <p>Je suis à la recherche d'un emploi en <strong>CDI</strong>.
-            </p>
+            <p>Je suis à la recherche d'un emploi en salariat. </p>
         </div>
     </div>
+
     <main>
         <section id="about">
             <div class="grid_container">
                 <!-- item1 -->
                 <img src="images\IMG_7866-2.jpg" alt="photo Profil" id="photoProfil">
                 <!-- item2 -->
-                <h2 id="apropos">Bienvenue sur mon Portfolio</h2>
+                <h2 id="apropos">A propos de moi</h2>
                 <!-- item3 -->
                 <div class="identite">
                     <p><b>LEFEBVRE Marie</b> </p>
-                    <p>marie.lefebvre291@gmail.com</p>
+                    <a href="mailto:marie.lefebvre291@gmail.com" class="adresseMail">marie.lefebvre291@gmail.com</a>
                     <p><span id="calculAge"></span>, Gondecourt 59147</p>
                     <p>Anglais : A2</p>
-                    <p>GitHub, Linkedin</p>
+                    <div class="iconesLiens">
+                        <a href="https://github.com/Marielef291" target="_blank"><img src="images/icones/signe-github.png" alt="Lien vers mon git hub" class="icones-contact"></a>
+                        <a href="https://www.linkedin.com/in/marie-lefebvre291/" target="_blank"><img src="images/icones/linkedin.png" alt="Voir ma page linkedin" class="icones-contact"></a>
+                    </div>
+
                 </div>
                 <!-- item4 -->
                 <div class="text_about">
                     <p>Je suis Marie, Développeuse Full Stack. « Choisis un travail que tu aimes, et tu n’auras pas à travailler un seul jour dans ta vie. » Cette citation illustre parfaitement ma passion pour le code et mon engagement dans ce métier.</p>
-                    <p>Créativité : Face à des difficultés, je sais user de ma créativité pour trouver des solutions originales et efficaces.</p>
-                    <p>Esprit d’équipe : je sais collaborer efficacement, que ce soit dans des projets techniques ou dans des activités comme les courses d’orientation en binôme.</p>
-                    <p>Apprentissage continue : je sais me former en autonomie, comme en témoigne mon autoformation en Python et Django.</p>
-
-                    <div class="btn">
-                        <a href="#Contact"><button>Me Contacter</button></a>
-                        <button onclick="window.open('fichier/CV_Full-Stack_LefebvreMarie.pdf')">Télécharger mon cv</button>
-                    </div>
+                    <span class="softSkills">
+                        <img src="images/icones/creativite.png" alt="icones créativité" class="iconesSoftSkills">
+                        <p> <b>Créativité</b> : Face à des difficultés, je sais user de ma créativité pour trouver des solutions originales et efficaces.</p>
+                    </span>
+                    <span class="softSkills">
+                        <img src="images/icones/esprit-dequipe.png" alt="icones esprit d'équipe" class="iconesSoftSkills">
+                        <p><b>Esprit d’équipe</b> : je sais collaborer efficacement, que ce soit dans des projets techniques ou dans des activités comme les courses d’orientation en binôme.</p>
+                    </span>
+                    
+                    <span class="softSkills">
+                        <img src="images/icones/education.png" alt="icones apprentissage" class="iconesSoftSkills">
+                        <p><b>Apprentissage continue</b> : je sais me former en autonomie, comme en témoigne mon autoformation en Python et Django.</p>
+                    </span>
+                    
+                    
+                </div>
+                <div class="btn">
+                    <button onclick="window.location.href = 'cv.html';">Voir la page CV</button>
+                    <button onclick="window.open('fichier/CV_Full-Stack_LefebvreMarie.pdf')">Télécharger mon CV</button>
                 </div>
             </div>
         </section>
@@ -74,157 +87,45 @@
 
         <div class="langageProg" id="langages">
             <h3 class="titrePartie">Langages de programmation</h3>
+            <div class="elmtsIconesLangages">
+                <img src="images/icones/langages/python.png" alt="icone Python" class="icoLangage" title="Python">
 
-            <div class="competence" id="HTML">
-                <span class="langage">HTML</span>
-                <div class="barre">
-                    <div class="progression" data-pourcentage="90%" data-couleur="#8FD14F" title="90%"></div>
-                </div>
+                <img src="images/icones/langages/html_css.png" alt="icone HTML CSS" class="icoLangage" title="HTML CSS">
+
+                <img src="images/icones/langages/javascript.png" alt="icone Java Script" class="icoLangage" title="Java Script">
+
+                <img src="images/icones/langages/php.png" alt="icone PHP" class="icoLangage" title="PHP">
+
+                <img src="images/icones/langages/Java.png" alt="icone Java" class="icoLangage" title="Java">
+
+                <img src="images/icones/langages/bash.png" alt="icone Bash" class="icoLangage" title="Bash">
+
+                <img src="images/icones/langages/git.png" alt="icone Git" class="icoLangage" title="Git">
+
+                <img src="images/icones/langages/sql.png" alt="icone SQL" class="icoLangage" title="SQL">
             </div>
-
-            <div class="competence" id="CSS">
-                <span class="langage">CSS</span>
-                <div class="barre">
-                    <div class="progression" data-pourcentage="80%" data-couleur="#9ed046" title="80%"></div>
-                </div>
-            </div>
-
-            <div class="competence" id="Python">
-                <span class="langage">Python</span>
-                <div class="barre">
-                    <div class="progression" data-pourcentage="85%" data-couleur="#a3cf43" title="85%"></div>
-                </div>
-            </div>
-
-            <div class="competence" id="JavaScript">
-                <span class="langage">Java Script</span>
-                <div class="barre">
-                    <div class="progression" data-pourcentage="75%" data-couleur="#acce3e" title="75%"></div>
-                </div>
-            </div>
-
-            <div class="competence" id="PHP">
-                <span class="langage">PHP</span>
-                <div class="barre">
-                    <div class="progression" data-pourcentage="60%" data-couleur="#bdcd34" title="60%"></div>
-                </div>
-            </div>
-
-            <div class="competence" id="NodeJS">
-                <span class="langage">Node JS</span>
-                <div class="barre">
-                    <div class="progression" data-pourcentage="30%" data-couleur="#c6cc2f" title="30%"></div>
-                </div>
-            </div>
-
-            <div class="competence" id="Bash">
-                <span class="langage">Bash</span>
-                <div class="barre">
-                    <div class="progression" data-pourcentage="75%" data-couleur="#daca23" title="75%"></div>
-                </div>
-            </div>
-
         </div>
-
         <div class="langageProg" id="frameworks">
             <h3 class="titrePartie">Frameworks et Bibliothèques</h3>
-            <div class="competence" id="ReactJS">
-                <span class="langage">React JS</span>
-                <div class="barre">
-                    <div class="progression" data-pourcentage="70%" data-couleur="#e6c91c" title="70%"></div>
-                </div>
-            </div>
-            <div class="competence" id="Bootstrap">
-                <span class="langage">Bootstrap</span>
-                <div class="barre">
-                    <div class="progression" data-pourcentage="60%" data-couleur="#efc817" title="60%"></div>
-                </div>
-            </div>
-            <div class="competence" id="Symphony">
-                <span class="langage">Symphony</span>
-                <div class="barre">
-                    <div class="progression" data-pourcentage="60%" data-couleur="#f5c814" title="60%"></div>
-                </div>
-            </div>
-            <div class="competence" id="Flask">
-                <span class="langage">Flask</span>
-                <div class="barre">
-                    <div class="progression" data-pourcentage="50%" data-couleur="#fac710" title="50%"></div>
-                </div>
+            <div class="elmtsIconesLangages">
+                <img src="images/icones/langages/React.png" alt="icone React JS" class="icoLangage" title="React JS">
+
+                <img src="images/icones/langages/Bootstrap.png" alt="icone Bootstrap" class="icoLangage" title="Bootstrap">
+
+                <img src="images/icones/langages/symfony.png" alt="icone Symfony" class="icoLangage" title="Symfony">
+
+                <img src="images/icones/langages/django.png" alt="icone Django" class="icoLangage" title="Django">
+
+                <img src="images/icones/langages/Node.js.png" alt="icone Node JS" class="icoLangage" title="Node JS">
+
+                <img src="images/icones/langages/javajee.png" alt="icone JEE" class="icoLangage" title="Java JEE">
+
+                <img src="images/icones/langages/Spring_Boot.png" alt="icone Spring boot" class="icoLangage" title="Spring boot">
+
+                <img src="images/icones/langages/angular.png" alt="icone Angular" class="icoLangage" title="Angular">
             </div>
         </div>
 
-        <div class="langageProg" id="outils">
-            <h3 class="titrePartie">Outils et Technologies</h3>
-            <div class="competence" id="Zebra">
-                <span class="langage">Zebra</span>
-                <div class="barre">
-                    <div class="progression" data-pourcentage="95%" data-couleur="#8FD14F" title="95%"></div>
-                </div>
-            </div>
-
-            <div class="competence" id="JSON">
-                <span class="langage">JSON</span>
-                <div class="barre">
-                    <div class="progression" data-pourcentage="95%" data-couleur="#9fd046" title="95%"></div>
-                </div>
-            </div>
-
-            <div class="competence" id="N8N">
-                <span class="langage">N8N</span>
-                <div class="barre">
-                    <div class="progression" data-pourcentage="75%" data-couleur="#aecf3d" title="75%"></div>
-                </div>
-            </div>
-
-            <div class="competence" id="Git">
-                <span class="langage">Git</span>
-                <div class="barre">
-                    <div class="progression" data-pourcentage="65%" data-couleur="#bece33" title="65%"></div>
-                </div>
-            </div>
-
-            <div class="competence" id="RaspberryPi">
-                <span class="langage">Raspberry Pi</span>
-                <div class="barre">
-                    <div class="progression" data-pourcentage="85%" data-couleur="#cdcd2a" title="85%"></div>
-                </div>
-            </div>
-
-            <div class="competence" id="Miro">
-                <span class="langage">Miro</span>
-                <div class="barre">
-                    <div class="progression" data-pourcentage="90%" data-couleur="#ddcb21" title="90%"></div>
-                </div>
-            </div>
-
-            <div class="competence" id="Trello">
-                <span class="langage">Trello/ Jira</span>
-                <div class="barre">
-                    <div class="progression" data-pourcentage="90%" data-couleur="#ecc917" title="90%"></div>
-                </div>
-            </div>
-
-            <div class="competence" id="VSCode">
-                <span class="langage">VS Code</span>
-                <div class="barre">
-                    <div class="progression" data-pourcentage="90%" data-couleur="#fac710" title="90%"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="langageProg" id="autres">
-            <h3 class="titrePartie">Connaissances</h3>
-            <ul>
-                <li>Panda (librairie Python)</li>
-                <li>Beautifulsoup (librairie Python)</li>
-                <li>MySQL</li>
-                <li>Odoo (ERP)</li>
-                <li>Microsoft Office (Word, Excel, Publisher)</li>
-                <li>Windows</li>
-                <li>Linux</li>
-            </ul>
-        </div>
     </section>
 
     <h2 id="Projets">Réalisations</h2>
@@ -256,15 +157,13 @@
                     <div class="text">
                         <ul class="tags">
                             <li>React JS</li>
-                            <li>Bootstrap</li>
                             <li>Symphony</li>
                             <li>Api Plateform</li>
                             <li>MySQL</li>
                         </ul>
-                        <p>L’application a pour but de faciliter la gestion des demandes de devis et leurs réceptions
-                            auprès des transitaires, pour les envois de colis à l’international. Il y a également un
-                            suivi sur le long terme de ce qui a été envoyé. J’ai codé les pages pour l’enregistrement
-                            des contacts et l’envoi des demandes de devis ainsi que le design du site. </p>
+                        <p>Le but est de faciliter la gestion des demandes de devis et leurs réceptions
+                            auprès des transitaires, pour les envois de colis à l’international tout en assurant un suivi à long terme des demande envoyées. J’ai codé les pages pour l’enregistrement
+                            des contacts, l’envoi des demandes de devis ainsi que le design du site. </p>
                     </div>
                 </div>
             </div>
@@ -280,13 +179,35 @@
                             <li>Bash</li>
                             <li>Cron</li>
                         </ul>
-                        <p>Avec un Raspberry zero 2w, j’ai réalisé un time laps de mon jardin sur un an.</p>
+                        <p>Avec un Raspberry zero 2w et un script python, j’ai réalisé un time laps de mon jardin sur un an.</p>
                         <p class="btn_lien-real">
                             <a href="https://www.youtube.com/watch?v=mckbe0aMD4c"target="_blank">
                                 <button>Vidéo sur Youtube </button>
                             </a>
                             <a href="https://gitlab.com/Naukogha/timelaps-raspberry" target="_blank">
                                 <button>Code sur Git</button>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid_overlay">
+            <h3>RUNNING DEAD (en cours)</h3>
+            <div class="container">
+                <img src="images/images_projets/RunningDead.png" alt="TIMELAPS RASPBERRY PI " class="image">
+                <div class="overlay">
+                    <div class="text">
+                        <ul class="tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Java Script</li>
+                        </ul>
+                        <p>Application d'entraînement pour course d’orientation, simulant des sprints chronométrés déclenchés aléatoirement. </p>
+                        <p class="btn_lien-real">
+                            <a href="https://github.com/Marielef291/RunningDead" target="_blank">
+                                <button>Code/démo sur Git</button>
                             </a>
                         </p>
                     </div>
