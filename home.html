@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEFEBVRE MARIE</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="script.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">A propos</a></li>
+                <li><a href="#mesCompetences">Compétence</a></li>
+                <li><a href="#Parcours">Parcours</a></li>
+                <li><a href="#Realisations">Réalisations</a></li>
+                <li><a href="#Projets">Projets</a></li>
+                <li><a href="#Loisirs">Loisirs</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars menu-hamburger" ></i>
+    </nav>
+    <div class="header">
+        <div class="image-header">
+
+        </div>
+        <div class="titre">
+            <h1>
+                Bonjour, je m’appelle
+                <span class="nom">Marie </span>
+                <br id="retourPhone">
+                <span>et je suis</span>
+                <span class="nom">Développeuse </span>
+                <br id="retourPhone2" hidden>
+                <span class="nom" id="curseur"></span>
+            </h1>
+            <br>
+            <p>Je suis à la recherche d'un emploi en <strong>CDI</strong> dans le <strong>Nord Pas de Calais.</strong>
+            </p>
+        </div>
+        <div class="btn">
+            <a href="#Contact"><button>Me Contacter</button></a>
+            <button onclick="window.open('fichier/CV_Full-Stack_LefebvreMarie.pdf')">Télécharger mon cv</button>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="grid_container">
+            <!-- item1 -->
+            <img src="images\IMG_7866-2.jpg" alt="photo Profil" id="photoProfil">
+            <!-- item2 -->
+            <h2 id="apropos">A propos de moi</h2>
+            <!-- item3 -->
+            <div class="identite">
+                <p><b>Nom :</b> LEFEBVRE Marie</p>
+                <p><b>Age : </b><span id="calculAge"></span></p>
+                <p><b>Ville actuelle :</b> Gondecourt</p>
+            </div>
+            <!-- item4 -->
+            <div class="text_about">
+                <p>Développeuse Full Stack junior, J'ai effectué une alternance très enrichissante au sein d’une
+                    start-up, et cette expérience m'a offert l'opportunité de développer mon autonomie et la confiance
+                    en moi, après seulement 6 mois de formation. Cela m'a permis de renforcer mes connaissances et
+                    d'élargir mes compétences.</p>
+                <p>Actuellement, je continue d’apprendre de nouvelles technologies telles que Vue JS et Django.</p>
+                <p> Après avoir obtenu un master en Ecologie et un DU en Bio-Informatique, j'ai choisi de me reconvertir
+                    en tant que Développeur Web. C’est lors de mon stage de DWWM (Développeur Web, Web Mobile) que la
+                    phrase de Confucius a pris tout son sens «Choisis un travail que tu aimes, et tu n’auras pas à
+                    travailler un seul jour dans ta vie» : j’avais le sentiment de m’amuser à coder. C’est comme cela
+                    que j’ai compris que la programmation était faite pour moi. </p>
+                <p>Je m'efforce constamment d'améliorer et d'optimiser les projets pour répondre de la meilleure manière
+                    aux besoins du client.</p>
+            </div>
+        </div>
+    </section>
+
+    <h2 id="mesCompetences">Mes Compétences</h2>
+    <section id="competences">
+
+        <div class="langageProg" id="langages">
+            <h3 class="titrePartie">Langages de programmation</h3>
+
+            <div class="competence" id="HTML">
+                <span class="langage">HTML</span>
+                <div class="barre">
+                    <div class="progression" data-pourcentage="90%" data-couleur="#8FD14F" title="90%"></div>
+                </div>
+            </div>
+
+            <div class="competence" id="CSS">
+                <span class="langage">CSS</span>
+                <div class="barre">
+                    <div class="progression" data-pourcentage="80%" data-couleur="#9ed046" title="80%"></div>
+                </div>
+            </div>
+
+            <div class="competence" id="Python">
+                <span class="langage">Python</span>
+                <div class="barre">
+                    <div class="progression" data-pourcentage="85%" data-couleur="#a3cf43" title="85%"></div>
+                </div>
+            </div>
+
+            <div class="competence" id="JavaScript">
+                <span class="langage">Java Script</span>
+                <div class="barre">
+                    <div class="progression" data-pourcentage="75%" data-couleur="#acce3e" title="75%"></div>
+                </div>
+            </div>
+
+            <div class="competence" id="PHP">
+                <span class="langage">PHP</span>
+                <div class="barre">
+                    <div class="progression" data-pourcentage="60%" data-couleur="#bdcd34" title="60%"></div>
+                </div>
+            </div>
+
+            <div class="competence" id="NodeJS">
+                <span class="langage">Node JS</span>
+                <div class="barre">
+                    <div class="progression" data-pourcentage="30%" data-couleur="#c6cc2f" title="30%"></div>
+                </div>
+            </div>
+
+            <div class="competence" id="Bash">
+                <span class="langage">Bash</span>
+                <div class="barre">
+                    <div class="progression" data-pourcentage="75%" data-couleur="#daca23" title="75%"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="langageProg" id="frameworks">
+            <h3 class="titrePartie">Frameworks et Bibliothèques</h3>
+            <div class="competence" id="ReactJS">
+                <span class="langage">React JS</span>
+                <div class="barre">
+                    <div class="progression" data-pourcentage="70%" data-couleur="#e6c91c" title="70%"></div>
+                </div>
+            </div>
+            <div class="competence" id="Bootstrap">
+                <span class="langage">Bootstrap</span>
+                <div class="barre">
+                    <div class="progression" data-pourcentage="60%" data-couleur="#efc817" title="60%"></div>
+                </div>
+            </div>
+            <div class="competence" id="Symphony">
+                <span class="langage">Symphony</span>
+                <div class="barre">
+                    <div class="progression" data-pourcentage="60%" data-couleur="#f5c814" title="60%"></div>
+                </div>
+            </div>
+            <div class="competence" id="Flask">
+                <span class="langage">Flask</span>
+                <div class="barre">
+                    <div class="progression" data-pourcentage="50%" data-couleur="#fac710" title="50%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="langageProg" id="outils">
+            <h3 class="titrePartie">Outils et Technologies</h3>
+            <div class="competence" id="Zebra">
+                <span class="langage">Zebra</span>
+                <div class="barre">
+                    <div class="progression" data-pourcentage="95%" data-couleur="#8FD14F" title="95%"></div>
+                </div>
+            </div>
+
+            <div class="competence" id="JSON">
+                <span class="langage">JSON</span>
+                <div class="barre">
+                    <div class="progression" data-pourcentage="95%" data-couleur="#9fd046" title="95%"></div>
+                </div>
+            </div>
+
+            <div class="competence" id="N8N">
+                <span class="langage">N8N</span>
+                <div class="barre">
+                    <div class="progression" data-pourcentage="75%" data-couleur="#aecf3d" title="75%"></div>
+                </div>
+            </div>
+
+            <div class="competence" id="Git">
+                <span class="langage">Git</span>
+                <div class="barre">
+                    <div class="progression" data-pourcentage="65%" data-couleur="#bece33" title="65%"></div>
+                </div>
+            </div>
+
+            <div class="competence" id="RaspberryPi">
+                <span class="langage">Raspberry Pi</span>
+                <div class="barre">
+                    <div class="progression" data-pourcentage="85%" data-couleur="#cdcd2a" title="85%"></div>
+                </div>
+            </div>
+
+            <div class="competence" id="Miro">
+                <span class="langage">Miro</span>
+                <div class="barre">
+                    <div class="progression" data-pourcentage="90%" data-couleur="#ddcb21" title="90%"></div>
+                </div>
+            </div>
+
+            <div class="competence" id="Trello">
+                <span class="langage">Trello/ Jira</span>
+                <div class="barre">
+                    <div class="progression" data-pourcentage="90%" data-couleur="#ecc917" title="90%"></div>
+                </div>
+            </div>
+
+            <div class="competence" id="VSCode">
+                <span class="langage">VS Code</span>
+                <div class="barre">
+                    <div class="progression" data-pourcentage="90%" data-couleur="#fac710" title="90%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="langageProg" id="autres">
+            <h3 class="titrePartie">Connaissances</h3>
+            <ul>
+                <li>Panda (librairie Python)</li>
+                <li>Beautifulsoup (librairie Python)</li>
+                <li>MySQL</li>
+                <li>Odoo (ERP)</li>
+                <li>Microsoft Office (Word, Excel, Publisher)</li>
+                <li>Windows</li>
+                <li>Linux</li>
+            </ul>
+        </div>
+    </section>
+
+    <h2 id="Parcours">Parcours</h2>
+    <section class="time">
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="content ">
+                        <h3>Consultant Développeur support ERP</h3>
+                        <h4>Absys Cyborg</h4>
+                        <p>• Utilisation Business Central et Navision (interfaces et code).</p>
+                        <p>• Prise en charge des demandes clients.</p>
+
+                    </div>
+                    <div class="time">
+                        <h4>Mars 2024</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="content ">
+                        <h3>Alternante Concepteur développeur d’applications</h3>
+                        <h4>Relab</h4>
+                        <p>• Automatisation sur la messagerie interne lors de nouvelles commandes sur le site (avec N8N
+                            et JavaScript).</p>
+                        <p>• Script de récupération de catalogues fournisseurs en Python.</p>
+                        <p>• Programmation sur ERP Odoo : ajout d’inputs, et calcul automatique des dates de péremption.
+                        </p>
+                        <p>• Création d’une application Web pour l’envoi de mails pour les demandes de cotations auprès
+                            des transitaires (utilisant REACT.JS avec API Symfony et MySQL).</p>
+
+                    </div>
+                    <div class="time">
+                        <h4>Septembre 2022<br>Juillet 2023</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>Formation Alternance Concepteur Développeur d’applications - BAC +3/+4</h3>
+                        <h4>Afpa Roubaix</h4>
+                        <p>• Consolidation connaissances en Symfony.</p>
+                        <p>• Apprentissage REACT.JS et NodeJs.</p>
+                        <p>• Projet d’étude : Site de gestion d’hébergements réalisé en groupe (méthode Agile).
+                            Utilisation de Git et Jira. Codé en React, PHP et MySQL.</p>
+
+                    </div>
+                    <div class="time">
+                        <h4>Septembre 2022<br>Juillet 2023</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>Stage Développeur Web</h3>
+                        <h4>Relab</h4>
+                        <p>Automatiquette : Application écrite en Python et son framework Flask en liaison avec l’ERP
+                            Odoo. Lors de la réception de produits, pour chaque référence entrée dans Odoo,
+                            l’application va générer un fichier au format ZPL qui sera envoyé à l’imprimante de manière
+                            automatique.
+
+                        </p>
+                    </div>
+                    <div class="time">
+                        <h4>Juillet 2022<br>Septembre 2022</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>Formation Développeur Web, Web Mobile - BAC +2</h3>
+                        <h4>Afpa Hazebrouck</h4>
+                        <p>Apprentissage des langages HTML, CSS, JavaScript, SQL, PHP et le Framework Symfony.
+                            Connaissance de la méthode Agile.
+
+                        </p>
+                    </div>
+                    <div class="time">
+                        <h4>Février 2022<br>Septembre 2022</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>1 Formation / 1 Job : Nurserie</h3>
+                        <h4>Afpa / M2i Lomme</h4>
+                        <p>Découverte des métiers du numérique ; HTML, CSS, JavaScript, Méthode agile</p>
+                    </div>
+                    <div class="time">
+                        <h4>Octobre 2021<br>Novembre 2021</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>DU Bio-Informatique (Séquençage haut débit et maladies génétiques)</h3>
+                        <h4>UMDPC Santé - Université de Bourgogne </h4>
+                        <p>Unix/Linux, Python, Analyse Séquençage via ligne de commande Bash.
+                        </p>
+                    </div>
+                    <div class="time">
+                        <h4>Octobre 2020<br>Juin 2021</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>Autoformation en Python</h3>
+                        <h4>Fun MOOC & Udemy </h4>
+                        <p>Algorithme. Réalisation d’un programme produisant des tableaux d’art optique avec Turtle.
+                            Création d’applications desktop avec PySide.
+                        </p>
+                    </div>
+                    <div class="time">
+                        <h4>Octobre 2019<br>Novrembre 2020</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>Service civique </h3>
+                        <h4>Mairie Houplin-Ancoisne </h4>
+                        <p>Valorisation du patrimoine naturel de la commune :</p>
+                        <p>• Création d’une carte de la ville via QGIS.</p>
+                        <p>• Exposition photos sur la faune et la flore présentes dans la commune.</p>
+                        <p>• Réduction de l’utilisation des pesticides.</p>
+                        <p>• Communication auprès des habitants.</p>
+
+                    </div>
+                    <div class="time">
+                        <h4>Février 2017<br>Juillet 2017</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>Ingénieure d'étude recherche en génétique </h3>
+                        <h4>Laboratoire de Biologie Marine, ULB (Université Libre de Bruxelles)</h4>
+                        <p>Phylogéographie d’étoiles de mer de l’Océan Antarctique :</p>
+                        <p>• Réalisation d’extraction d’ADN et de PCR pour plusieurs espèces</p>
+                        <p>• Utilisation de logiciels pour l’analyse des séquences d’ADN et l’étude de la
+                            phylogéographie.</p>
+
+                    </div>
+                    <div class="time">
+                        <h4>Janvier 2016<br>Juillet 2016</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>Master Recherche - Génétique et Ecologie (Gestion et Evolution de la Biodiversité) </h3>
+                        <h4>Université Lille 1</h4>
+
+                    </div>
+                    <div class="time">
+                        <h4>Septembre 2014<br>Juillet 2016</h4>
+                    </div>
+                </li>
+                <div style="clear:both;"></div>
+            </ul>
+        </div>
+    </section>
+
+    <h2 id="Realisations">Réalisations</h2>
+    <section class="realisations">
+        <div class="grid_overlay">
+            <h3>Automatiquette</h3>
+            <div class="container">
+                <img src="images/automatiquette.png" alt="automatiquette" class="image">
+                <div class="overlay">
+                    <div class="text">
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>Flask</li>
+                            <li>ZPL</li>
+                            <li>Odoo</li>
+                        </ul>
+                        <p>Lors de la réception de produits, pour chaque référence entrée dans Odoo, l’application
+                            Automatiquette va récupérer les informations du produit et générer un fichier au format ZPL
+                            qui sera envoyé à l’imprimante de manière automatique</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid_overlay">
+            <h3>ReTransitLab</h3>
+            <div class="container">
+                <img src="images/RetransitLab.png" alt="retransitlab" class="image">
+                <div class="overlay">
+                    <div class="text">
+                        <ul class="tags">
+                            <li>React JS</li>
+                            <li>Bootstrap</li>
+                            <li>Symphony</li>
+                            <li>Api Plateform</li>
+                            <li>MySQL</li>
+                        </ul>
+                        <p>L’application a pour but de faciliter la gestion des demandes de devis et leurs réceptions
+                            auprès des transitaires, pour les envois de colis à l’international. Il y a également un
+                            suivi sur le long terme de ce qui a été envoyé. J’ai codé les pages pour l’enregistrement
+                            des contacts et l’envoi des demandes de devis ainsi que le design du site. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid_overlay">
+            <h3>TIMELAPS RASPBERRY PI </h3>
+            <div class="container">
+                <img src="images/TimelapsRapberryPi.jpg" alt="TIMELAPS RASPBERRY PI " class="image">
+                <div class="overlay">
+                    <div class="text">
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>Bash</li>
+                            <li>Cron</li>
+                        </ul>
+                        <p>Avec un Raspberry zero 2w, j’ai réalisé un time laps de mon jardin sur un an.</p>
+                        <p class="btn_lien-real">
+                            <a href="https://www.youtube.com/watch?v=mckbe0aMD4c"target="_blank">
+                                <button>Vidéo sur Youtube </button>
+                            </a>
+                            <a href="https://gitlab.com/Naukogha/timelaps-raspberry" target="_blank">
+                                <button>Code sur Git</button>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h2 id="Projets">Projets</h2>
+    <section class="projets">
+        <div class="accordion-wrapper">
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check1" checked>
+                <label class="accordion-label" for="check1">MYL Shaker</label>
+                <div class="accordion-content">
+                    <p>Multi Youtube Live Shaker : sur une même page, je voudrais regrouper plusieurs vidéos live sur
+                        les nids d’oiseaux. En utilisant l’API de YouTube, les liens morts seraient automatiquement
+                        changés par le nouveau lien (si disponible)</p>
+                    <ul class="tags">
+                        <li>React JS</li>
+                        <li>Bootstrap</li>
+                        <li>Symphony</li>
+                        <li>Api Plateform</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check2">
+                <label class="accordion-label" for="check2">Site photos</label>
+                <div class="accordion-content">
+                    <p>Faire un simple site affichant mes plus belles photos pour le coté front office, et une page
+                        administrateur en back office.</p>
+                    <ul class="tags">
+                        <li>Django</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check3">
+                <label class="accordion-label" for="check3">Page météo</label>
+                <div class="accordion-content">
+                    <p>Avec un raspberry et un capteur température/pression, je voudrais faire une page qui donnerait la
+                        température en temps réel. Avec une caméra connectée sur le raspberry l’application affichera
+                        une photo de l’extérieur.</p>
+                    <p>Ma page sera reliée à une api météo donnant les prévisions des prochains jours.</p>
+                    <ul class="tags">
+                        <li>Vue JS</li>
+                        <li>Node JS</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check4">
+                <label class="accordion-label" for="check4">Camera nichoir mésanges / faunes nocturnes</label>
+                <div class="accordion-content">
+                    <p>Le projet serait de monter sur batterie externe un Raspberry Pi pour filmer un nichoir à mésange,
+                        et la faune de mon jardin.</p>
+                    <ul class="tags">
+                        <li>Motion Eye </li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h2 id="Loisirs">Loisirs</h2>
+    <section class="loisirs">
+        <div class="grille_loisirs">
+            <div id="genealogie" class="case_loisir">
+                <img src="images/icon_genealogie.png" alt="" class="imageGenea">
+                <p>Généalogie</p>
+                <div class="overlayGenea">
+                    <div class="textGenea">
+                        <p>Depuis 2008</p>
+                        <p>~6000 personnes enregistrés dans l'arbre</p>
+                        <p class="btn_lien-real">
+                            <a href="https://gw.geneanet.org/marielef_w?lang=fr&p=marie&n=lefebvre&oc=0" target="_blank">
+                                <button>Voir mon arbre </button>
+                            </a>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="couture" class="case_loisir" onmouseover="showSliderCouture()" onmouseout="hideSliderCouture()">
+                <img class="iconeCouture" src="images/icon_couture.png" alt="" >
+                <p class="iconeCouture2">Couture</p>
+                <div class="slider-container slider-1" hidden>
+                    <div class="slider" >
+                        <img src="images/couture_01.jpg" alt="">
+                        <img src="images/couture_02.jpg" alt="">
+                        <img src="images/couture_03.jpg" alt="">
+                        <img src="images/couture_01.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div id="photo" class="case_loisir" onmouseover="showSliderPhoto()" onmouseout="hideSliderPhoto()">
+                <img src="images/icon_photo.png" alt="" class="iconPhoto">
+                <p class="iconPhoto2">Photographies</p>
+                <div class="slider-container slider-1" hidden>
+                    <div class="slider" >
+                        <img src="images/photo_01.jpg" alt="">
+                        <img src="images/photo_02.png" alt="">
+                        <img src="images/photo_03.jpg" alt="">
+                        <img src="images/photo_01.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div id="sport" class="case_loisir" onmouseover="showSliderSport()" onmouseout="hideSliderSport()">
+                <img src="images/icon_sport.png" alt="">
+                <p class="diverSport">Sports</p>
+                <p class="textAnimSport" hidden></p>
+            </div>
+        </div>
+    </section>
+
+    <h2 id="Contact">Contact</h2>
+    <section class="contact">
+        <div class="lien_contact">
+                <i class="fa-solid fa-envelope fa-lg" ></i>
+                <a href="mailto:marie.lefebvre291@gmail.com?subject=Contact%20depuis%20votre%20site" class="mail">marie.lefebvre291@gmail.com</a>
+            </div>
+            </div>
+            <div class="icones">
+                <a href="https://www.linkedin.com/in/marie-lefebvre291/" target="_blank">
+                    <i class="fa-brands fa-linkedin fa-lg" ></i>
+                </a>
+                <a href="https://gitlab.com/Naukogha" target="_blank">
+                    <i class="fa-brands fa-github fa-lg" ></i>
+                </a>
+                
+            </div>
+        
+    </section>
+
+</body>
+
+</html>

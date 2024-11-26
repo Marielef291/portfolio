@@ -1,0 +1,932 @@
+:root {
+    --vertfonce: #0ca754;
+    --vertclair: #76b538;
+}
+
+body{
+    margin : 0 ;/* pour ne pas avoir de bord blanc sur les côtés*/
+    padding: 0;
+}
+
+button, a.button{
+    background-color: white;
+    border: 2px solid var(--vertfonce);
+    border-radius: 10px;
+    font-size: 14pt;
+    color: var(--vertfonce);
+    width: 195px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+button:hover, a.button:hover {
+    background-color: var(--vertfonce); /* Green */
+    color: white;
+}
+
+
+h1, h2{
+    font-family: 'Kalam', cursive;
+    font-style: italic;
+    font-size: 24pt;
+    color : var(--vertfonce);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: var(--vertclair);
+    text-align: center;
+}
+
+p, h3, li, h4, h5, label, a{
+    font-family: Helvetica,Arial, sans-serif;
+    font-size: 12pt;
+}
+
+h3{
+    text-transform: uppercase;
+    color: black;
+    font-size: 13pt;
+    padding-bottom: 10px;
+}
+
+li{
+    padding-bottom: 15px;
+}
+section{
+    margin: 50px;
+}
+
+/* ######### PARTI NAVBAR ################# */
+.navbar{
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2; 
+    margin-right: 25px;
+    backdrop-filter: blur(10px);
+}
+
+.navbar a, .navbar li{
+    font-weight: bold;
+    z-index: 1;
+    color: var(--vertfonce);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar li {
+    padding: 0;
+}
+
+
+.nav-links ul {
+    z-index: 1;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+.nav-links ul li a {
+    display: block;
+    padding: 15px 15px; /* Ajustez le padding pour correspondre à votre mise en page */
+}
+
+.navbar ul :hover{
+    background-color: #76b53830;
+    color: black;
+}
+
+
+.navbar .menu-hamburger {
+    position: absolute;
+    font-size: 35px;
+    right: 20px;
+    top: 15px; 
+    display: none;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+/* ######### PARTI HEADER ################# */
+.header{
+    margin-bottom: 50px;
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: 100%;
+}
+
+.image-header {
+    background: url('images/84825071_m.jpg') center top no-repeat;
+    background-size: cover; /* Utilisez cover pour que l'image couvre entièrement la zone */
+    opacity: 0.5;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    width: 100%;
+    /* height: 100vh;  */
+    position: relative;
+    margin-top: -60vh;
+    z-index: auto;
+}
+
+.titre {
+    top: 0;
+    margin-top: 8vh;
+    grid-row :1/2;
+    grid-column: 1/2;
+    justify-self: start;
+    margin-left: 15vh;
+    position: relative;
+    z-index: 1;
+}
+
+.titreHeader{
+    font-size: 44pt;
+    color:var(--vertfonce);
+    text-align:left;
+    text-shadow: 2px 2px 4px #ffffff85; /* ombre blanche pour faire ressortir le texte */
+    margin: 0;
+}
+
+.btn{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+    z-index: 1;
+}
+
+.titre p{
+    font-size: 12,5pt;
+    font-weight :510;
+}
+
+/* ######### PARTI ABOUT ################# */
+#about{
+    margin: 50px 50px;
+}
+
+.icones-contact{
+    width: 32px;
+}
+.iconesLiens{
+    display: flex;
+    gap: 25px;
+}
+
+.adresseMail{
+    font-size: 12pt;
+    color: var(--vertfonce);
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: 35vh minmax(auto, 750px);
+    gap : 5px 70px;
+    justify-content: center;
+    
+}
+
+#photoProfil{
+    border-radius: 50%;
+    width: 100%; /* Faites en sorte que la largeur soit de 100% par rapport à son conteneur */
+    height: auto; /* Ajustez automatiquement la hauteur pour maintenir les proportions de l'image */
+    align-self: center;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.identite{
+    grid-column: 1/2;
+    grid-row: 3/5;
+    margin-top: 10px;
+}
+
+.identite p{
+    margin: 15px 0px;
+}
+
+.text_about{
+    text-align: justify;
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.btn{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+/* ######### PARTIE COMPETENCES ############ */
+#competences {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: minmax(auto, 500px) minmax(auto, 500px);
+    gap: 50px;
+    
+}
+
+.competence {
+    margin-bottom: 20px;
+}
+
+.langage {
+    font-family: Helvetica,Arial, sans-serif;
+    font-size: 12pt;
+    text-align: justify;
+}
+
+#langages, #frameworks, #outils,#autres  {
+    padding: 25px;
+    background-color: #b9c48135;
+    border-radius:10px;
+}
+
+.barre {
+    width: 100%;
+    background-color: white;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.progression {
+    height: 100%;
+    width: 0;
+    background-color: #a8a787;
+    border-radius: 10px;
+    transition: 2s ease; /* Contrôle la durée de l'animation ici (1s dans cet exemple) */
+}
+
+.titrePartie{
+    text-align: center;
+}
+
+/* ######### PARTIE PARCOURS ############ */
+.parcours{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.viewMore{
+    align-self: center;
+}
+
+.timeline{
+    position:relative;
+    margin:50px auto;
+    padding:40px 0;
+    width:1000px;
+    box-sizing:border-box;
+}
+
+.timeline:before{
+    content:'';
+    position:absolute;
+    left:50%;
+    width:2px;
+    height:100%;
+    background:#c5c5c5;
+}
+
+.timeline ul{
+    padding:0;
+    margin:0;
+}
+
+.timeline ul li{
+    list-style:none;
+    position:relative;
+    width:50%;
+    padding:20px 40px;
+    box-sizing:border-box;
+}
+
+.timeline ul li:nth-child(odd){
+    float:left;
+    text-align:right;
+    clear:both;
+}
+
+.timeline ul li:nth-child(even){
+    float:right;
+    text-align:left;
+    clear:both;
+}
+
+.content{
+    padding-bottom:20px;
+}
+
+.timeline ul li:nth-child(odd):before{
+    content:'';
+    position:absolute;
+    width:10px;
+    height:10px;
+    top:24px;
+    right:-6px;
+    background:#949494;;
+    border-radius:50%;
+    
+}
+
+.timeline ul li:nth-child(even):before{
+    content:'';
+    position:absolute;
+    width:10px;
+    height:10px;
+    top:24px;
+    left:-4px;
+    background:#949494;
+    border-radius:50%;
+}
+
+.timeline ul li h3{
+    padding:0;
+    margin:0;
+    color:var(--vertclair);
+    font-weight:600;
+}
+
+.timeline ul li p{
+    margin:10px 0 0;
+    padding:0;
+    text-align: justify;
+}
+
+.timeline ul li .time h4{
+    margin:0;
+    padding:0;
+    font-size:12pt;
+    text-align: center;
+    color: #ffffff;
+}
+
+.timeline ul li:nth-child(odd) .time{
+    position:absolute;
+    top:12px;
+    right:-175px;
+    margin:0;
+    padding:8px 16px;
+    background:var(--vertclair);
+    border-radius:10px;
+    border: var(--vertclair) 1px solid;
+
+}
+
+.timeline ul li:nth-child(even) .time{
+    position:absolute;
+    top:12px;
+    left:-175px;
+    margin:0;
+    padding:8px 16px;
+    background:var(--vertclair);
+    border-radius:10px;
+    border: var(--vertclair) 2px solid;
+}
+
+.lineEnd{
+    transition: 1s ease 1s; /* Transition fluide */
+}
+
+.hidden {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s ease ; /* Transition fluide */
+    transform: translateY(-60px); /* Commence légèrement décalé vers le haut */
+}
+
+.hidden.fade-in {
+    overflow: visible;
+    opacity: 1;
+    max-height: 1000px; /* Une valeur suffisamment grande pour contenir le contenu */
+    transform: translateY(0); /* Réinitialiser la position */
+}
+
+button.viewMore img{
+    width: 12px;
+}
+
+.viewMore {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.viewMore:hover {
+    background-color: #ffffff; /* Bleu plus foncé au survol */
+    color: #0ca754;
+    transform: translateY(-10px); /* Légère élévation au survol */
+}
+
+
+/* ######### PARTIE REALISATIONS ############ */
+.realisations{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 550px));
+    gap: 50px;
+    justify-content: center;
+}
+
+.grid_overlay{
+    border-radius:10px;
+    border: #0ca75463 2px solid;
+}
+
+.grid_overlay h3{
+    text-align: center;
+}
+
+.container {
+    position: relative;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    border-radius: 0 0 10px 10px ;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 0 0 15px 15px ;
+}
+
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text {
+    white-space:normal; 
+    position: absolute;
+    width: 90%;
+    text-align: justify;
+    padding: 20px;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Déplacer le texte vers le haut */
+    -ms-transform: translate(-50%, -50%);
+}
+
+ul.tags {
+    color: white;
+    padding-inline-start: 0;
+    text-align: center;
+
+}
+
+.tags li {
+    font-size: 11pt;
+    padding-bottom: 0;
+    display: inline-block;
+    padding: 5px;
+    background-color: var(--vertclair);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.btn_lien-real{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn_lien-real a {
+    text-decoration: none; 
+}
+
+.btn_lien-real button{
+    font-size: 12pt;
+    width: 155px;
+    height: 35px;
+}
+
+/* ######### PARTIE LOISIRS ############ */
+.grille_loisirs{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 350px));
+    justify-content: center;
+    gap: 30px 110px;
+}
+
+.case_loisir {
+    position: relative;
+    width: 100%;
+    border: #0ca75463 2px solid;
+    border-radius: 30px;
+    aspect-ratio: 1 / 1; /* Définit le ratio largeur / hauteur pour créer un carré */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.case_loisir img{
+    width: 40%;
+    margin: auto; 
+    display: block; 
+}
+
+.case_loisir p{
+    text-align: center;
+    margin-bottom: 15px; 
+}
+
+.overlayGenea {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.case_loisir:hover .overlayGenea {
+    bottom: 0;
+    height: 100%;
+}
+
+.textGenea {
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.slider-1{
+    overflow: hidden;
+}
+
+.slider-1 .slider {
+    display: flex;
+    white-space: nowrap; 
+    animation : slider-1 6s infinite;
+    
+}
+
+.slider-1 img{
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 30px;
+}
+
+#elmtGreen {
+    color: var(--vertfonce);
+}
+/* 
+5% par transition, nombre choisi arbitrairement.
+
+reste divisé par nb de pauses
+81(%) / 3 = 20(%) par pause
+  */
+
+@keyframes slider-1 {
+    0%, 14.29%, 100% {
+    transform: translateX(0);
+    }
+    28.57%, 42.86% {
+    transform: translateX(-100%);
+    }
+    57.14%, 71.43% {
+    transform: translateX(-200%);
+    }
+    85.71%, 100% {
+    transform: translateX(-300%);
+    }
+} 
+
+
+
+@media all and (max-width : 1070px){
+    .titre{
+        margin-left: 5vh;
+        margin-right: 3vh;
+    }
+}
+
+/* pour tablette */
+@media all and (max-width : 1025px){
+    /* header */
+    .image-header {
+        margin-top: -20vh;
+    }
+
+    h1{
+        font-size: 18pt;
+    }
+
+    .nom{
+        font-size: 28pt;
+    }
+
+    .grid_container{
+        grid-template-columns: minmax(auto, 25vw) auto;
+    }
+
+/* About */
+    /* #photoProfil{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .identite{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        align-self: end;
+    }
+
+    .text_about{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    } */
+
+/* Parcourt */
+    .timeline{
+        width:100%;
+    }
+
+    .realisations{
+        margin: 50px 10px;
+    }
+
+    .grille_loisirs{
+        grid-template-columns: repeat(2, minmax(auto, 300px));
+        gap: 25px 40px;
+    }
+}
+
+@media all and (max-width : 900px){
+    .navbar{
+        background-color: transparent;
+        position: fixed;
+        backdrop-filter: none;
+    }
+    .nav-links{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: #b9c48135;
+        backdrop-filter: blur(10px);
+        width: 100%;
+        height: 100vh;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .menu-hamburger {
+        display: block;
+        color: var(--vertclair);
+    }
+    .nav-links ul li{
+        margin: 10px 0;
+        font-size: 13pt;
+    }
+    .nav-links ul li a{
+        font-size: 16pt;
+    }
+    .mobile-menu{
+        margin-left: 0;
+    }
+}
+
+/* pour GRAND téléphone */
+@media all and (max-width : 767px){
+/* header */
+    .image-header {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        margin-top: 0;
+    } 
+    
+
+/* about */
+    .grid_container{
+        grid-template-columns: 50% 50%;
+        gap : 5px 20px;
+    }    
+    
+    #apropos{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    #photoProfil{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        max-width: 60%;
+        justify-self: center;
+    }
+
+    .identite{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        align-self: flex-end;
+    }
+
+    .text_about {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .btn{
+        grid-column: 1/3;
+    }
+
+/* techno */
+    #competences{
+        grid-template-columns: minmax(auto, 500px);
+        gap: 20px;
+
+    }
+
+/* pacours */
+    .timeline{
+        width:100%;
+        padding-bottom:0;
+    }
+
+    .timeline:before{
+        left:20px;
+        top: 0px;
+        height:100%;
+    }
+    .timeline ul li:nth-child(odd),
+    .timeline ul li:nth-child(even)
+    {
+        width:100%;
+        text-align:left;
+        padding-left:50px;
+        padding-bottom:50px;
+    }
+    .timeline ul li:nth-child(odd):before,
+    .timeline ul li:nth-child(even):before
+    {
+        top:-25px;
+        left:16px;
+    }
+    .timeline ul li:nth-child(odd) .time,
+    .timeline ul li:nth-child(even) .time{
+        top:-45px;
+        left:50px;
+        right:inherit;
+    }
+
+
+    
+}
+
+/* pour petit téléphone */
+@media all and (max-width : 560px){
+    #retourPhone2 {
+        display: block;
+    }
+    .text p {
+        font-size: 10pt;
+    }
+    .tags li {
+        font-size: 9pt;
+    }
+    .accordion-label{
+        font-size: 11pt;
+    }
+        
+    .contact .icones i {
+        font-size: 50px;
+    }
+    .contact{
+        max-width: 350px;
+    }
+    .mail{
+        font-size: 14pt;
+    }
+
+    #photoProfil{
+        max-width: 100%;
+    }
+
+    .adresseMail {
+        word-break: break-word;
+    }
+    /* loisir */
+    .grille_loisirs{
+        display: grid;
+        grid-template-columns: minmax(auto, 250px);
+        justify-content: center;
+        gap: 30px 110px;
+        margin: 0 10px
+    }
+    #sport{
+        /* grid-column: 1/2; */
+        grid-row: 3/4;
+    }
+}
+
+@media all and (max-width : 365px){
+    button, a.button{
+        font-size: 10pt;
+    }
+    .btn_lien-real button{
+        font-size: 8pt;
+        width: 105px;
+        height: 25px;
+    }
+    .text p {
+        font-size: 6.5pt;
+    }
+    .text .tags li {
+        font-size: 7pt;
+    }
+
+
+    .contact .icones i {
+        font-size: 50px;
+    }
+    .contact{
+        max-width: 270px;
+    }
+    .mail{
+        font-size: 14pt;
+    }
+}
+
+/* pour TRES petit téléphone */
+@media all and (max-width : 299px){
+    /* .image-header {
+    } */
+
+    h1{
+        font-size: 12pt;
+    }
+    .nom{
+        font-size: 20pt;
+    }
+    p{
+        font-size: 10pt;
+    }
+
+    .contact{
+        max-width: 230px;
+    }
+
+    .timeline ul li .time h4{
+        font-size: 10pt;
+    }
+    .timeline ul li:nth-child(even) .time , .timeline ul li:nth-child(odd) .time {
+        padding: 4px 10px;
+    }
+
+    .timeline ul li .content h4{
+        font-size: 11pt;
+    }
+
+    .timeline ul li h3{
+        font-size: 11pt;
+
+    }
+
+}
