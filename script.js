@@ -34,7 +34,10 @@ const viewParcourt = () => {
   document.querySelector(".viewMore").style.display = "none";
 };
 
-document.querySelector(".viewMore").addEventListener("click", viewParcourt);
+const viewMoreButton = document.querySelector(".viewMore");
+if (viewMoreButton) {
+  viewMoreButton.addEventListener("click", viewParcourt);
+}
 
 
 //SECTION LOISIR
