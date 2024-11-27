@@ -71,7 +71,7 @@ section{
 }
 
 /* ######### PARTI NAVBAR ################# */
-.navbar{
+nav{
     position: fixed;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.5);
@@ -84,7 +84,7 @@ section{
     backdrop-filter: blur(10px);
 }
 
-.navbar a, .navbar li{
+nav a, nav li{
     font-weight: bold;
     z-index: 1;
     color: var(--vertfonce);
@@ -92,7 +92,7 @@ section{
     text-decoration: none;
 }
 
-.navbar li {
+nav li {
     padding: 0;
 }
 
@@ -109,13 +109,13 @@ section{
     padding: 15px 15px; /* Ajustez le padding pour correspondre à votre mise en page */
 }
 
-.navbar ul :hover{
+nav ul :hover{
     background-color: #76b53830;
     color: black;
 }
 
 
-.navbar .menu-hamburger {
+nav .menu-hamburger {
     position: absolute;
     font-size: 35px;
     right: 20px;
@@ -127,7 +127,7 @@ section{
 
 
 /* ######### PARTI HEADER ################# */
-.header{
+header{
     margin-bottom: 50px;
     display: grid;
     row-gap: 30px;
@@ -740,7 +740,7 @@ footer{
 }
 
 @media all and (max-width : 900px){
-    .navbar{
+    nav{
         background-color: transparent;
         position: fixed;
         backdrop-filter: none;
@@ -766,7 +766,7 @@ footer{
         flex-direction: column;
         align-items: center;
     }
-    .navbar .menu-hamburger {
+    nav .menu-hamburger {
         display: block;
         color: var(--vertclair);
     }
