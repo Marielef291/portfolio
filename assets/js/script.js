@@ -41,37 +41,18 @@ if (viewMoreButton) {
 
 
 //SECTION LOISIR
-const sliderContainerCouture = document.querySelector('#couture .slider-container');
-const icone = document.querySelector('#couture .iconeCouture')
-const icone2 = document.querySelector('#couture .iconeCouture2')
-
-function showSliderCouture() {
-  sliderContainerCouture.hidden = false;
-  icone.style.display = 'none';
-  icone2.style.display = 'none';
+function showSlider(classe) {
+  document.querySelector(classe+' .slider-container').hidden = false;
+  document.querySelector(classe+' .iconeLoisir').style.display = 'none';
+  document.querySelector(classe+' .titreLoisir').style.display = 'none';
 }
 
-function hideSliderCouture() {
-  sliderContainerCouture.hidden = true;
-  icone.style.display = 'block';
-  icone2.style.display = 'block';
+function hideSlider(classe) {
+  document.querySelector(classe+' .slider-container').hidden = true;
+  document.querySelector(classe+' .iconeLoisir').style.display = 'block';
+  document.querySelector(classe+' .titreLoisir').style.display = 'block';
 }
 
-const sliderContainerPhoto = document.querySelector('#photo .slider-container');
-const icone3 = document.querySelector('#photo .iconPhoto')
-const icone4 = document.querySelector('#photo .iconPhoto2')
-
-function showSliderPhoto() {
-  sliderContainerPhoto.hidden = false;
-  icone3.style.display = 'none';
-  icone4.style.display = 'none';
-}
-
-function hideSliderPhoto() {
-  sliderContainerPhoto.hidden = true;
-  icone3.style.display = 'block';
-  icone4.style.display = 'block';
-}
 
 
 const menuHamburger = document.querySelector(".menu-hamburger")

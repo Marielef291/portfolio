@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Développeur Full Stack spécialisé en Python, Java, Javascript, React. Découvrez mes projets et mon CV. Lille, Nord Pas-de-Calais">
     <title>CV LEFEBVRE MARIE</title>
-    <link href="style.css" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
     <nav>
         <div class="nav-links">
             <ul>
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="#top">Home</a></li>
                 <li><a href="#about">A propos</a></li>
                 <li><a href="#Parcours">Parcours</a></li>
                 <li><a href="#Loisirs">Loisirs</a></li>
@@ -30,7 +31,7 @@
         <div class="image-header">
 
         </div>
-        <div class="titre">
+        <div class="textesHeader">
             <h2 class="titreHeader">Marie Lefebvre</h2>
             <h1 class="titreHeader">Développeur <br id="retourPhone2" hidden>Full Stack</h1>
             <br>
@@ -41,26 +42,26 @@
     
     <main>
         <section id="about">
-            <div class="grid_container">
+            <div class="grid_container_about">
                 <!-- item1 -->
-                <img src="images\IMG_7866-2.jpg" alt="photo Profil" id="photoProfil">
+                <img src="assets\images\IMG_7866-2.jpg" alt="photo Profil" id="photoProfil">
                 <!-- item2 -->
                 <h2 id="apropos">A propos de moi</h2>
                 <!-- item3 -->
                 <div class="identite">
                     <p><b>LEFEBVRE Marie</b> </p>
-                    <a href="mailto:marie.lefebvre291@gmail.com" class="adresseMail">marie.lefebvre291@gmail.com</a>
+                    <a href="mailto:marie.lefebvre291@gmail.com" class="adresseMail" rel="noopener noreferrer">marie.lefebvre291@gmail.com</a>
                     <p><span id="calculAge"></span>, Gondecourt 59147</p>
                     <p>Anglais : A2</p>
                     <div class="iconesLiens">
-                        <a href="https://github.com/Marielef291" target="_blank"><img src="images/icones/signe-github.png" alt="Lien vers mon git hub" class="icones-contact"></a>
-                        <a href="https://www.linkedin.com/in/marie-lefebvre291/" target="_blank"><img src="images/icones/linkedin.png" alt="Voir ma page linkedin" class="icones-contact"></a>
+                        <a href="https://github.com/Marielef291" target="_blank" rel="noopener noreferrer"><img src="assets/images/icones/signe-github.png" alt="Lien vers mon git hub" class="icones-contact"></a>
+                        <a href="https://www.linkedin.com/in/marie-lefebvre291/" target="_blank" rel="noopener noreferrer"><img src="assets/images/icones/linkedin.png" alt="Voir ma page linkedin" class="icones-contact"></a>
                     </div>
 
                 </div>
                 <!-- item4 -->
                 <div class="text_about">
-                    <p>Développeuse Full Stack, J'ai effectué une alternance très enrichissante au sein d’une
+                    <p><strong>Développeuse Full Stack</strong>, j'ai effectué une alternance très enrichissante au sein d’une
                         start-up, et cette expérience m'a offert l'opportunité de développer mon autonomie, de renforcer mes connaissances et
                         d'élargir mes compétences.</p>
                     <p> Après avoir obtenu un master en Ecologie et un DU en Bio-Informatique, j'ai choisi de me reconvertir
@@ -73,7 +74,7 @@
                 </div>
                 <div class="btn">
                     <button onclick="window.location.href = '/portfolio/';">Voir la page portfolio</button>
-                    <button onclick="window.open('fichier/CV_Full-Stack_LefebvreMarie.pdf')">Télécharger mon CV</button>
+                    <button onclick="window.open('assets/fichier/CV_Full-Stack_LefebvreMarie.pdf')">Télécharger mon CV</button>
                 </div>
             </div>
         </section>
@@ -83,7 +84,7 @@
         <div class="timeline">
             <ul>
                 <li class="formation">
-                    <div class="content ">
+                    <div class="content_parcourt ">
                         <h3> <i class="fas fa-graduation-cap"></i>  Formation Développeur Java perfectionnement - Certification Oracle</h3>
                         <h4>M2i</h4>
                         <p>• Maîtriser le packaging et le déploiement d’applications Java SE/EE.</p>
@@ -96,7 +97,7 @@
                     </div>
                 </li>
                 <li class="formation">
-                    <div class="content ">
+                    <div class="content_parcourt ">
                         <h3><i class="fas fa-graduation-cap"></i> Formation Développeur JAVA JEE</h3>
                         <h4>M2i</h4>
                         <p>Apprentissage de Java, Hibernate, Java Jee, Spring Boot, Typescript, Angular</p>
@@ -110,16 +111,16 @@
                     </div>
                 </li>
                 <li class="emploi">
-                    <div class="content ">
+                    <div class="content_parcourt ">
                         <h3><i class="fas fa-briefcase"></i> Alternante Concepteur développeur d’applications</h3>
                         <h4>Relab</h4>
                         <p>• Automatisation sur la messagerie interne lors de nouvelles commandes sur le site (avec N8N
-                            et JavaScript).</p>
-                        <p>• Script de récupération de catalogues fournisseurs en Python.</p>
+                            et <strong class="no-bold">JavaScript</strong>).</p>
+                        <p>• Script de récupération de catalogues fournisseurs en <strong class="no-bold">Python</strong>.</p>
                         <p>• Programmation sur ERP Odoo : ajout d’inputs, et calcul automatique des dates de péremption.
                         </p>
                         <p>• Création d’une application Web pour l’envoi de mails pour les demandes de cotations auprès
-                            des transitaires (utilisant REACT.JS avec API Symfony et MySQL).</p>
+                            des transitaires (utilisant <strong class="no-bold">REACT.JS </strong>avec API Symfony et MySQL).</p>
 
                     </div>
                     <div class="time">
@@ -127,7 +128,7 @@
                     </div>
                 </li>
                 <li class="formation">
-                    <div class="content">
+                    <div class="content_parcourt">
                         <h3><i class="fas fa-graduation-cap"></i> Formation Alternance Concepteur Développeur d’applications - BAC +3/+4</h3>
                         <h4>Afpa Roubaix</h4>
                         <p>• Consolidation connaissances en Symfony.</p>
@@ -141,7 +142,7 @@
                     </div>
                 </li>
                 <li class="emploi">
-                    <div class="content">
+                    <div class="content_parcourt">
                         <h3><i class="fas fa-briefcase"></i> Stage Développeur Web</h3>
                         <h4>Relab</h4>
                         <p>Automatiquette : Application écrite en Python et son framework Flask en liaison avec l’ERP
@@ -156,10 +157,10 @@
                     </div>
                 </li>
                 <li class="formation">
-                    <div class="content">
+                    <div class="content_parcourt">
                         <h3><i class="fas fa-graduation-cap"> </i> Formation Développeur Web, Web Mobile - BAC +2</h3>
                         <h4>Afpa Hazebrouck</h4>
-                        <p>Apprentissage des langages HTML, CSS, JavaScript, SQL, PHP et le Framework Symfony.
+                        <p>Apprentissage des langages HTML, CSS, JavaScript, <strong class="no-bold">SQL</strong>, PHP et le Framework Symfony.
                             Connaissance de la méthode Agile.
                         </p>
                     </div>
@@ -172,7 +173,7 @@
                 <div class="textMore">
                     <div class="hidden" >
                         <li class="formation">
-                            <div class="content">
+                            <div class="content_parcourt">
                                 <h3><i class="fas fa-graduation-cap"></i> 1 Formation / 1 Job : Nurserie</h3>
                                 <h4>Afpa / M2i Lomme</h4>
                                 <p>Découverte des métiers du numérique : HTML, CSS, JavaScript, Méthode agile</p>
@@ -183,7 +184,7 @@
                         </li>
                     
                         <li class="formation">
-                            <div class="content">
+                            <div class="content_parcourt">
                                 <h3><i class="fas fa-graduation-cap"> </i> DU Bio-Informatique (Séquençage haut débit et maladies génétiques)</h3>
                                 <h4>UMDPC Santé - Université de Bourgogne </h4>
                                 <p>Unix/Linux, Python, Analyse Séquençage via ligne de commande Bash.
@@ -195,7 +196,7 @@
                         </li>
                     
                         <li class="formation">
-                            <div class="content">
+                            <div class="content_parcourt">
                                 <h3><i class="fas fa-graduation-cap"></i> Autoformation en Python</h3>
                                 <h4>Fun MOOC & Udemy </h4>
                                 <p>Algorithme. Réalisation d’un programme produisant des tableaux d’art optique avec Turtle.
@@ -208,7 +209,7 @@
                         </li>
                     
                         <li class="emploi">
-                            <div class="content">
+                            <div class="content_parcourt">
                                 <h3><i class="fas fa-briefcase"></i> Service civique </h3>
                                 <h4>Mairie Houplin-Ancoisne </h4>
                                 <p>Valorisation du patrimoine naturel de la commune :</p>
@@ -224,7 +225,7 @@
                         </li>
                     
                         <li class="emploi">
-                            <div class="content">
+                            <div class="content_parcourt">
                                 <h3><i class="fas fa-briefcase"></i> Ingénieure d'étude recherche en génétique </h3>
                                 <h4>Laboratoire de Biologie Marine, ULB (Université Libre de Bruxelles)</h4>
                                 <p>Phylogéographie d’étoiles de mer de l’Océan Antarctique :</p>
@@ -239,7 +240,7 @@
                         </li>
                     
                         <li class="formation">
-                            <div class="content">
+                            <div class="content_parcourt">
                                 <h3><i class="fas fa-graduation-cap"></i> Master Recherche - Génétique et Ecologie (Gestion et Evolution de la Biodiversité) </h3>
                                 <h4>Université Lille 1</h4>
                     
@@ -258,7 +259,7 @@
 
         <button class="viewMore">
             Voir plus 
-            <br><img src="images/icones/fleche-vers-le-bas.png" alt="voir plus">
+            <br><img src="assets/images/icones/fleche-vers-le-bas.png" alt="voir plus" >
         </button>
     </section>
 
@@ -266,51 +267,51 @@
     <section class="loisirs">
         <div class="grille_loisirs">
             <div id="genealogie" class="case_loisir">
-                <img src="images/icones/icon_genealogie.png" alt="" class="imageGenea">
+                <img src="assets/images/icones/icon_genealogie.png" alt="icones arbre généalogique" class="iconeLoisir" title="icones arbre généalogique">
                 <p>Généalogie</p>
-                <div class="overlayGenea">
-                    <div class="textGenea">
+                <div class="overlaytextLoisir">
+                    <div class="textLoisir">
                         <p>Depuis 2008</p>
                         <p>~6000 personnes enregistrés dans l'arbre</p>
                         <p class="btn_lien-real">
-                            <a href="https://gw.geneanet.org/marielef_w?lang=fr&p=marie&n=lefebvre&oc=0" target="_blank">
+                            <a href="https://gw.geneanet.org/marielef_w?lang=fr&p=marie&n=lefebvre&oc=0" target="_blank" rel="noopener noreferrer">
                                 <button>Voir mon arbre </button>
                             </a>
                         </p>
                     </div>
                 </div>
             </div>
-            <div id="couture" class="case_loisir" onmouseover="showSliderCouture()" onmouseout="hideSliderCouture()">
-                <img class="iconeCouture" src="images/icones/icon_couture.png" alt="" >
-                <p class="iconeCouture2">Couture</p>
+            <div id="couture" class="case_loisir" onmouseover="showSlider('#couture')" onmouseout="hideSlider('#couture')">
+                <img src="assets/images/icones/icon_couture.png" alt="icones couture" class="iconeLoisir" title = "icones couture">
+                <p class="titreLoisir">Couture</p>
                 <div class="slider-container slider-1" hidden>
                     <div class="slider" >
-                        <img src="images/images_loisir/couture_01.jpg" alt="">
-                        <img src="images/images_loisir/couture_02.jpg" alt="">
-                        <img src="images/images_loisir/couture_03.jpg" alt="">
-                        <img src="images/images_loisir/couture_01.jpg" alt="">
+                        <img src="assets/images/images_loisir/couture_01.jpg" alt="slide d'une photo de peluche dragon" >
+                        <img src="assets/images/images_loisir/couture_02.jpg" alt="slide d'une photo de la peluche Python" >
+                        <img src="assets/images/images_loisir/couture_03.jpg" alt="slide d'une photo des peluches krokmou" >
+                        <img src="assets/images/images_loisir/couture_01.jpg" alt="slide d'une photo de peluche dragon" >
 
                     </div>
                 </div>
             </div>
-            <div id="photo" class="case_loisir" onmouseover="showSliderPhoto()" onmouseout="hideSliderPhoto()">
-                <img src="images/icones/icon_photo.png" alt="" class="iconPhoto">
-                <p class="iconPhoto2">Photographies</p>
+            <div id="photo" class="case_loisir" onmouseover="showSlider('#photo')" onmouseout="hideSlider('#photo')">
+                <img src="assets/images/icones/icon_photo.png" alt="" class="iconeLoisir">
+                <p class="titreLoisir">Photographies</p>
                 <div class="slider-container slider-1" hidden>
                     <div class="slider" >
-                        <img src="images/images_loisir/photo_01.jpg" alt="">
-                        <img src="images/images_loisir/photo_02.png" alt="">
-                        <img src="images/images_loisir/photo_03.jpg" alt="">
-                        <img src="images/images_loisir/photo_01.jpg" alt="">
+                        <img src="assets/images/images_loisir/photo_01.jpg" alt="slide photo grèbe huppé">
+                        <img src="assets/images/images_loisir/photo_02.png" alt="slide photo héron">
+                        <img src="assets/images/images_loisir/photo_03.jpg" alt="slide slide photo luzerne">
+                        <img src="assets/images/images_loisir/photo_01.jpg" alt="slide photo grèbe huppé">
 
                     </div>
                 </div>
             </div>
             <div id="sport" class="case_loisir">
-                <img src="images/icones/icon_sport.png" alt="" class="imageGenea">
+                <img src="assets/images/icones/icon_sport.png" alt="" class="iconeLoisir" >
                 <p>Sports</p>
-                <div class="overlayGenea">
-                    <div class="textGenea">
+                <div class="overlaytextLoisir">
+                    <div class="textLoisir">
                         <p>Roller <br>(Slalom et Basket)</p> 
                         <p id="elmtGreen">Course à pied (compétition de 5km)</p>
                         <p>Course d'orientation en binôme</p>                        
@@ -321,3 +322,17 @@
         </div>
     </section>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Marie Lefebvre. Tous droits réservés.</p>
+        <div class="iconesLiens">
+            <a href="mailto:marie.lefebvre291@gmail.com"><img src="assets/images/icones/email_white.png"
+                    alt="m'envoyer un e-mail" class="icones-contact" title="m'envoyer un e-mail"></a>
+            <a href="https://github.com/Marielef291" target="_blank"><img src="assets/images/icones/signe-github_white.png"
+                    alt="Lien vers mon git hub" class="icones-contact" title="Lien vers mon git hub"></a>
+            <a href="https://www.linkedin.com/in/marie-lefebvre291/" target="_blank"><img
+                    src="assets/images/icones/linkedin_white.png" alt="Voir ma page linkedin" class="icones-contact"
+                    title="Voir ma page linkedin"></a>
+        </div>
+    </footer>
+</body> 

@@ -6,8 +6,9 @@
     /* #258EA6 */
 }
 
+
 body{
-    margin : 0 ;/* pour ne pas avoir de bord blanc sur les côtés*/
+    margin : 0 ;
     padding: 0;
 }
 
@@ -66,8 +67,13 @@ h3{
 li{
     padding-bottom: 15px;
 }
+
 section{
     margin: 30px;
+}
+
+.no-bold {
+    font-weight: normal; 
 }
 
 /* ######### PARTI NAVBAR ################# */
@@ -96,7 +102,6 @@ nav li {
     padding: 0;
 }
 
-
 .nav-links ul {
     z-index: 1;
     list-style-type: none;
@@ -104,6 +109,7 @@ nav li {
     margin: 0;
     align-items: center;
 }
+
 .nav-links ul li a {
     display: block;
     padding: 15px 15px; /* Ajustez le padding pour correspondre à votre mise en page */
@@ -113,7 +119,6 @@ nav ul :hover{
     background-color: #76b53830;
     color: black;
 }
-
 
 nav .menu-hamburger {
     position: absolute;
@@ -135,19 +140,18 @@ header{
 }
 
 .image-header {
-    background: url('images/84825071_m.jpg') center top no-repeat;
+    background: url('../images/84825071_m.jpg') center top no-repeat;
     background-size: cover; /* Utilisez cover pour que l'image couvre entièrement la zone */
     opacity: 0.5;
     grid-row: 1/3;
     grid-column: 1/2;
     width: 100%;
-    /* height: 100vh;  */
     position: relative;
     margin-top: -60vh;
     z-index: auto;
 }
 
-.titre {
+.textesHeader {
     top: 0;
     margin-top: 8vh;
     grid-row :1/2;
@@ -175,7 +179,7 @@ header{
     z-index: 1;
 }
 
-.titre p{
+.textesHeader p{
     font-size: 12,5pt;
     font-weight :510;
 }
@@ -199,7 +203,7 @@ header{
     color: var(--vertfonce);
 }
 
-.grid_container{
+.grid_container_about{
     display: grid;
     grid-template-columns: 35vh minmax(auto, 750px);
     gap : 5px 70px;
@@ -261,11 +265,11 @@ header{
     border-radius:10px;
 }
 
-.titrePartie{
+.titrePartie_langage{
     text-align: center;
 }
 
-.elmtsIconesLangages{
+.icon-group{
     display: flex;
     padding: 20px;
     gap: 30px; 
@@ -278,10 +282,9 @@ header{
     height: 50px;
 }
 
-
 /* ######### PARTIE PARCOURS ############ */
 #Parcours {
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 .parcours{
@@ -336,7 +339,7 @@ header{
     clear:both;
 }
 
-.content{
+.content_parcourt{
     padding-bottom:20px;
 }
 
@@ -366,11 +369,8 @@ header{
 .timeline ul li h3{
     padding:0;
     margin:0;
-    /* color:var(--vertclair); */
     font-weight:600;
 }
-
-
 
 .timeline ul li p{
     margin:10px 0 0;
@@ -392,9 +392,7 @@ header{
     right:-175px;
     margin:0;
     padding:8px 16px;
-    /* background:var(--vertclair); */
     border-radius:10px;
-    /* border: var(--vertclair) 1px solid; */
 }
 
 .timeline ul li:nth-child(even) .time{
@@ -403,9 +401,7 @@ header{
     left:-175px;
     margin:0;
     padding:8px 16px;
-    /* background:var(--vertclair); */
     border-radius:10px;
-    /* border: var(--vertclair) 2px solid; */
 }
 
 /* GESTION DES COULEURS DANS PARCOUR */
@@ -475,34 +471,35 @@ button.viewMore img{
 }
 
 .realisations{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(auto, 550px));
+    display: flex;
     gap: 50px;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-.grid_overlay{
+.card_projet{
     border-radius:10px;
     border: #0ca75463 2px solid;
 }
 
-.grid_overlay h3{
+.card_projet h3{
     text-align: center;
 }
 
-.container {
+.card_container_projet {
     position: relative;
+    width: 100%
 }
-.image {
+.image_projet {
     display: block;
     width: 100%;
-    height: 265px; /* Hauteur fixe pour un crop */
-    object-fit: cover; /* Coupe l'image pour remplir le conteneur */
+    height: 265px; 
+    object-fit: cover;
     opacity: 0.8;
     border-radius: 0 0 10px 10px ;
 }
 
-.overlay {
+.image-overlay_projet {
     position: absolute;
     bottom: 100%;
     background-color: white;
@@ -513,12 +510,12 @@ button.viewMore img{
     border-radius: 0 0 15px 15px ;
 }
 
-.container:hover .overlay {
+.card_container_projet:hover .image-overlay_projet {
     bottom: 0;
     height: 100%;
 }
 
-.text {
+.text_card_projet {
     white-space:normal; 
     position: absolute;
     width: 90%;
@@ -531,14 +528,13 @@ button.viewMore img{
     -ms-transform: translate(-50%, -50%);
 }
 
-ul.tags {
+ul.tags_projet {
     color: white;
     padding-inline-start: 0;
     text-align: center;
-
 }
 
-.tags li {
+.tags_projet li {
     font-size: 11pt;
     padding-bottom: 0;
     display: inline-block;
@@ -597,7 +593,7 @@ ul.tags {
     margin-bottom: 15px; 
 }
 
-.overlayGenea {
+.overlaytextLoisir {
     position: absolute;
     bottom: 100%;
     left: 0;
@@ -610,12 +606,12 @@ ul.tags {
     transition: .5s ease;
 }
 
-.case_loisir:hover .overlayGenea {
+.case_loisir:hover .overlaytextLoisir {
     bottom: 0;
     height: 100%;
 }
 
-.textGenea {
+.textLoisir {
     position: absolute;
     overflow: hidden;
     top: 50%;
@@ -674,7 +670,6 @@ footer{
     display: flex;
     background-color: var(--vertfonce);
     color: #ffffff;
-    /* justify-content: space-around; */
     justify-content: center;
     align-items: center;
     column-gap: 30px;
@@ -682,7 +677,7 @@ footer{
 }
 
 @media all and (max-width : 1070px){
-    .titre{
+    .textesHeader{
         margin-left: 5vh;
         margin-right: 3vh;
     }
@@ -703,26 +698,9 @@ footer{
         font-size: 28pt;
     }
 
-    .grid_container{
+    .grid_container_about{
         grid-template-columns: minmax(auto, 25vw) auto;
     }
-
-/* About */
-    /* #photoProfil{
-        grid-column: 1/2;
-        grid-row: 1/3;
-    }
-
-    .identite{
-        grid-column: 2/3;
-        grid-row: 2/3;
-        align-self: end;
-    }
-
-    .text_about{
-        grid-column: 1/3;
-        grid-row: 3/4;
-    } */
 
 /* Parcourt */
     .timeline{
@@ -796,7 +774,7 @@ footer{
     #about{
         margin-bottom: 40px;
     }
-    .grid_container{
+    .grid_container_about{
         grid-template-columns: 50% 50%;
         gap : 5px 20px;
     }    
@@ -836,6 +814,11 @@ footer{
     }
 
 /* pacours */
+
+    #Parcours {
+        margin-bottom: 70px;
+    }
+
     .timeline{
         width:100%;
         padding-bottom:0;
@@ -880,13 +863,10 @@ footer{
         font-size: 30pt;
     }
 
-    #retourPhone2 {
-        display: block;
-    }
-    .text p {
+    .text_card_projet p {
         font-size: 10pt;
     }
-    .tags li {
+    .tags_projet li {
         font-size: 9pt;
     }
     .accordion-label{
@@ -914,6 +894,11 @@ footer{
     button{
         font-size: 11pt;
     }
+
+    .viewMore {
+        font-size: 14pt;
+    }
+    
     /* loisir */
     .grille_loisirs{
         display: grid;
@@ -929,7 +914,7 @@ footer{
 }
 
 @media all and (max-width : 365px){
-    button, a.button{
+    button{
         font-size: 10pt;
     }
     .btn_lien-real button{
@@ -937,13 +922,6 @@ footer{
         width: 105px;
         height: 25px;
     }
-    .text p {
-        font-size: 6.5pt;
-    }
-    .text .tags li {
-        font-size: 7pt;
-    }
-
 
     .contact .icones i {
         font-size: 50px;
@@ -958,9 +936,6 @@ footer{
 
 /* pour TRES petit téléphone */
 @media all and (max-width : 299px){
-    /* .image-header {
-    } */
-
     h1{
         font-size: 12pt;
     }
@@ -982,7 +957,7 @@ footer{
         padding: 4px 10px;
     }
 
-    .timeline ul li .content h4{
+    .timeline ul li .content_parcourt h4{
         font-size: 11pt;
     }
 

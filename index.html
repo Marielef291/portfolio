@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Développeur Full Stack spécialisé en Python, Java, Javascript, React. Découvrez mes projets et mon CV. Lille, Nord Pas-de-Calais">
     <title>Portfolio LEFEBVRE MARIE</title>
-    <link href="style.css" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
     <nav class="navbar">
         <div class="nav-links">
             <ul>
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="#top">Home</a></li>
                 <li><a href="#about">Bienvenue</a></li>
                 <li><a href="#mesTechnos">Technos</a></li>
                 <li><a href="#Projets">Réalisations</a></li>
@@ -30,7 +31,7 @@
         <div class="image-header">
 
         </div>
-        <div class="titre">
+        <div class="textesHeader">
             <h2 class="titreHeader">Marie Lefebvre</h2>
             <h1 class="titreHeader">Développeur <br id="retourPhone2" hidden>Full Stack</h1>
             <br>
@@ -40,9 +41,9 @@
 
     <main>
         <section id="about">
-            <div class="grid_container">
+            <div class="grid_container_about">
                 <!-- item1 -->
-                <img src="images\IMG_7866-2.jpg" alt="photo Profil" id="photoProfil">
+                <img src="assets\images\IMG_7866-2.jpg" alt="photo Profil" id="photoProfil" title="Photo de profil">
                 <!-- item2 -->
                 <h2 id="apropos">Bienvenue sur mon portfolio</h2>
                 <!-- item3 -->
@@ -52,184 +53,216 @@
                     <p><span id="calculAge"></span>, Gondecourt 59147</p>
                     <p>Anglais : A2</p>
                     <div class="iconesLiens">
-                        <a href="https://github.com/Marielef291" target="_blank"><img src="images/icones/signe-github.png" alt="Lien vers mon git hub" class="icones-contact"></a>
-                        <a href="https://www.linkedin.com/in/marie-lefebvre291/" target="_blank"><img src="images/icones/linkedin.png" alt="Voir ma page linkedin" class="icones-contact"></a>
+                        <a href="https://github.com/Marielef291" target="_blank"><img
+                                src="assets/images/icones/signe-github.png" alt="Lien vers mon git hub" class="icones-contact"
+                                title="Lien vers mon git hub"></a>
+                        <a href="https://www.linkedin.com/in/marie-lefebvre291/" target="_blank"><img
+                                src="assets/images/icones/linkedin.png" alt="Voir ma page linkedin" class="icones-contact"
+                                title="Voir ma page linkedin"></a>
                     </div>
 
                 </div>
                 <!-- item4 -->
                 <div class="text_about">
-                    <p>Je suis Marie, <strong>Développeuse Full Stack</strong>. « Choisis un travail que tu aimes, et tu n’auras pas à travailler un seul jour dans ta vie. » Cette citation illustre parfaitement ma passion pour le code et mon engagement dans ce métier.</p>
+                    <p>Je suis Marie, <strong>Développeuse Full Stack</strong>. « Choisis un travail que tu aimes, et tu
+                        n’auras pas à travailler un seul jour dans ta vie. » Cette citation illustre parfaitement ma
+                        passion pour le code et mon engagement dans ce métier.</p>
                     <span class="softSkills">
-                        <img src="images/icones/creativite.png" alt="icones créativité" class="iconesSoftSkills">
-                        <p> <b>Créativité</b> : Face à des difficultés, je sais user de ma créativité pour trouver des solutions originales et efficaces.</p>
+                        <img src="assets/images/icones/creativite.png" alt="icones créativité" class="iconesSoftSkills"
+                            title="icones créativité">
+                        <p> <b>Créativité</b> : Face à des difficultés, je sais user de ma créativité pour trouver des
+                            solutions originales et efficaces.</p>
                     </span>
                     <span class="softSkills">
-                        <img src="images/icones/esprit-dequipe.png" alt="icones esprit d'équipe" class="iconesSoftSkills">
-                        <p><b>Esprit d’équipe</b> : je sais collaborer efficacement, que ce soit dans des projets techniques ou dans des activités comme les courses d’orientation en binôme.</p>
+                        <img src="assets/images/icones/esprit-dequipe.png" alt="icones esprit d'équipe"
+                            class="iconesSoftSkills" title="icones esprit d'équipe">
+                        <p><b>Esprit d’équipe</b> : je sais collaborer efficacement, que ce soit dans des projets
+                            techniques ou dans des activités comme les courses d’orientation en binôme.</p>
                     </span>
-                    
+
                     <span class="softSkills">
-                        <img src="images/icones/education.png" alt="icones apprentissage" class="iconesSoftSkills">
-                        <p><b>Apprentissage continue</b> : je sais me former en autonomie, comme en témoigne mon autoformation en Python et Django.</p>
+                        <img src="assets/images/icones/education.png" alt="icones apprentissage" class="iconesSoftSkills"
+                            title="icones apprentissage">
+                        <p><b>Apprentissage continue</b> : je sais me former en autonomie, comme en témoigne mon
+                            autoformation en <strong class="no-bold">Python</strong> et <strong class="no-bold">Django</strong>.</p>
                     </span>
-                    
-                    
+
+
                 </div>
                 <div class="btn">
                     <button onclick="window.location.href = 'cv.html';">Voir la page CV</button>
-                    <button onclick="window.open('fichier/CV_Full-Stack_LefebvreMarie.pdf')">Télécharger mon CV</button>
+                    <button onclick="window.open('assets/fichier/CV_Full-Stack_LefebvreMarie.pdf')">Télécharger mon CV</button>
                 </div>
             </div>
         </section>
 
         <h2 id="mesTechnos">Technos</h2>
-    <section id="competences">
+        <section id="competences">
 
-        <div class="langageProg" id="langages">
-            <h3 class="titrePartie">Langages de programmation</h3>
-            <div class="elmtsIconesLangages">
-                <img src="images/icones/langages/python.png" alt="icone Python" class="icoLangage" title="Python">
+            <div class="langageProg" id="langages">
+                <h3 class="titrePartie_langage">Langages de programmation</h3>
+                <div class="icon-group">
+                    <img src="assets/images/icones/langages/python.png" alt="icone Python" class="icoLangage" title="Python">
 
-                <img src="images/icones/langages/html_css.png" alt="icone HTML CSS" class="icoLangage" title="HTML CSS">
+                    <img src="assets/images/icones/langages/html_css.png" alt="icone HTML CSS" class="icoLangage"
+                        title="HTML CSS">
 
-                <img src="images/icones/langages/javascript.png" alt="icone Java Script" class="icoLangage" title="Java Script">
+                    <img src="assets/images/icones/langages/javascript.png" alt="icone Java Script" class="icoLangage"
+                        title="Java Script">
 
-                <img src="images/icones/langages/php.png" alt="icone PHP" class="icoLangage" title="PHP">
+                    <img src="assets/images/icones/langages/php.png" alt="icone PHP" class="icoLangage" title="PHP">
 
-                <img src="images/icones/langages/Java.png" alt="icone Java" class="icoLangage" title="Java">
+                    <img src="assets/images/icones/langages/Java.png" alt="icone Java" class="icoLangage" title="Java">
 
-                <img src="images/icones/langages/bash.png" alt="icone Bash" class="icoLangage" title="Bash">
+                    <img src="assets/images/icones/langages/bash.png" alt="icone Bash" class="icoLangage" title="Bash">
 
-                <img src="images/icones/langages/git.png" alt="icone Git" class="icoLangage" title="Git">
+                    <img src="assets/images/icones/langages/git.png" alt="icone Git" class="icoLangage" title="Git">
 
-                <img src="images/icones/langages/sql.png" alt="icone SQL" class="icoLangage" title="SQL">
+                    <img src="assets/images/icones/langages/sql.png" alt="icone SQL" class="icoLangage" title="SQL">
+                </div>
             </div>
-        </div>
-        <div class="langageProg" id="frameworks">
-            <h3 class="titrePartie">Frameworks et Bibliothèques</h3>
-            <div class="elmtsIconesLangages">
-                <img src="images/icones/langages/React.png" alt="icone React JS" class="icoLangage" title="React JS">
+            <div class="langageProg" id="frameworks">
+                <h3 class="titrePartie_langage">Frameworks et Bibliothèques</h3>
+                <div class="icon-group">
+                    <img src="assets/images/icones/langages/React.png" alt="icone React JS" class="icoLangage"
+                        title="React JS">
 
-                <img src="images/icones/langages/Bootstrap.png" alt="icone Bootstrap" class="icoLangage" title="Bootstrap">
+                    <img src="assets/images/icones/langages/Bootstrap.png" alt="icone Bootstrap" class="icoLangage"
+                        title="Bootstrap">
 
-                <img src="images/icones/langages/symfony.png" alt="icone Symfony" class="icoLangage" title="Symfony">
+                    <img src="assets/images/icones/langages/symfony.png" alt="icone Symfony" class="icoLangage"
+                        title="Symfony">
 
-                <img src="images/icones/langages/django.png" alt="icone Django" class="icoLangage" title="Django">
+                    <img src="assets/images/icones/langages/django.png" alt="icone Django" class="icoLangage" title="Django">
 
-                <img src="images/icones/langages/Node.js.png" alt="icone Node JS" class="icoLangage" title="Node JS">
+                    <img src="assets/images/icones/langages/Node.js.png" alt="icone Node JS" class="icoLangage"
+                        title="Node JS">
 
-                <img src="images/icones/langages/javajee.png" alt="icone JEE" class="icoLangage" title="Java JEE">
+                    <img src="assets/images/icones/langages/javajee.png" alt="icone JEE" class="icoLangage" title="Java JEE">
 
-                <img src="images/icones/langages/Spring_Boot.png" alt="icone Spring boot" class="icoLangage" title="Spring boot">
+                    <img src="assets/images/icones/langages/Spring_Boot.png" alt="icone Spring boot" class="icoLangage"
+                        title="Spring boot">
 
-                <img src="images/icones/langages/angular.png" alt="icone Angular" class="icoLangage" title="Angular">
+                    <img src="assets/images/icones/langages/angular.png" alt="icone Angular" class="icoLangage"
+                        title="Angular">
+                </div>
             </div>
-        </div>
 
-    </section>
+        </section>
 
-    <h2 id="Projets">Réalisations</h2>
-    <section class="realisations">
-        <div class="grid_overlay">
-            <h3>Automatiquette</h3>
-            <div class="container">
-                <img src="images/images_projets/automatiquette.png" alt="automatiquette" class="image">
-                <div class="overlay">
-                    <div class="text">
-                        <ul class="tags">
-                            <li>Python</li>
-                            <li>Flask</li>
-                            <li>ZPL</li>
-                            <li>Odoo</li>
-                        </ul>
-                        <p>Lors de la réception de produits, pour chaque référence entrée dans Odoo, l’application
-                            Automatiquette va récupérer les informations du produit et générer un fichier au format ZPL
-                            qui sera envoyé à l’imprimante de manière automatique</p>
+        <h2 id="Projets">Réalisations</h2>
+        <section class="realisations">
+            <div class="card_projet">
+                <h3>RUNNING DEAD (en cours)</h3>
+                <div class="card_container_projet">
+                    <img src="assets/images/images_projets/RunningDead.png" alt="Images mockup Running Dead" class="image_projet"
+                        title="Images mockup Running Dead">
+                    <div class="image-overlay_projet">
+                        <div class="text_card_projet">
+                            <ul class="tags_projet">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li><strong class="no-bold">Java Script</strong></li>
+                            </ul>
+                            <p>Application d'entraînement pour course d’orientation, simulant des sprints chronométrés
+                                déclenchés aléatoirement. Conçu en OnePage, avec utilisation du localStorage pour les données.</p>
+                            <p class="btn_lien-real">
+                                <a href="https://github.com/Marielef291/RunningDead" target="_blank">
+                                    <button>Code sur Git</button>
+                                </a>
+                                <a href="https://marielef291.github.io/RunningDead/" target="_blank">
+                                    <button>Démo</button>
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="grid_overlay">
-            <h3>ReTransitLab</h3>
-            <div class="container">
-                <img src="images/images_projets/RetransitLab.png" alt="retransitlab" class="image">
-                <div class="overlay">
-                    <div class="text">
-                        <ul class="tags">
-                            <li>React JS</li>
-                            <li>Symphony</li>
-                            <li>Api Plateform</li>
-                            <li>MySQL</li>
-                        </ul>
-                        <p>Le but est de faciliter la gestion des demandes de devis et leurs réceptions
-                            auprès des transitaires, pour les envois de colis à l’international tout en assurant un suivi à long terme des demande envoyées. J’ai codé les pages pour l’enregistrement
-                            des contacts, l’envoi des demandes de devis ainsi que le design du site. </p>
+            <div class="card_projet">
+                <h3>ReTransitLab</h3>
+                <div class="card_container_projet">
+                    <img src="assets/images/images_projets/RetransitLab.png" alt="capture d'écrant retransitlab" class="image_projet"
+                        title="capture d'écrant retransitlab">
+                    <div class="image-overlay_projet">
+                        <div class="text_card_projet">
+                            <ul class="tags_projet">
+                                <li><strong class="no-bold">React JS</strong></li>
+                                <li>Symphony</li>
+                                <li>Api Plateform</li>
+                                <li><strong class="no-bold">MySQL</strong></li>
+                            </ul>
+                            <p>Le but est de faciliter la gestion des demandes de devis et leurs réceptions
+                                auprès des transitaires, pour les envois de colis à l’international tout en assurant un
+                                suivi à long terme des demande envoyées. J’ai codé les pages pour l’enregistrement
+                                des contacts, l’envoi des demandes de devis ainsi que le design du site. </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="grid_overlay">
-            <h3>TIMELAPS RASPBERRY PI </h3>
-            <div class="container">
-                <img src="images/images_projets/TimelapsRapberryPi.jpg" alt="TIMELAPS RASPBERRY PI " class="image">
-                <div class="overlay">
-                    <div class="text">
-                        <ul class="tags">
-                            <li>Python</li>
-                            <li>Bash</li>
-                            <li>Cron</li>
-                        </ul>
-                        <p>Avec un Raspberry zero 2w et un script python, j’ai réalisé un time laps de mon jardin sur un an.</p>
-                        <p class="btn_lien-real">
-                            <a href="https://www.youtube.com/watch?v=mckbe0aMD4c"target="_blank">
-                                <button>Vidéo sur Youtube </button>
-                            </a>
-                            <a href="https://gitlab.com/Naukogha/timelaps-raspberry" target="_blank">
-                                <button>Code sur Git</button>
-                            </a>
-                        </p>
+            <div class="card_projet">
+                <h3>Automatiquette</h3>
+                <div class="card_container_projet">
+                    <img src="assets/images/images_projets/automatiquette.png" alt="capture d'écran automatiquette"
+                        class="image_projet" title="capture d'écran automatiquette">
+                    <div class="image-overlay_projet">
+                        <div class="text_card_projet">
+                            <ul class="tags_projet">
+                                <li>Python</li>
+                                <li>Flask</li>
+                                <li>ZPL</li>
+                                <li>Odoo</li>
+                            </ul>
+                            <p>Lors de la réception de produits, pour chaque référence entrée dans Odoo, l’application
+                                Automatiquette va récupérer les informations du produit et générer un fichier au format
+                                ZPL qui sera envoyé à l’imprimante de manière automatique.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="card_projet">
+                <h3>TIMELAPS RASPBERRY PI </h3>
+                <div class="card_container_projet">
+                    <img src="assets/images/images_projets/TimelapsRapberryPi.jpg"
+                        alt="capture d'écran vidéo TIMELAPS RASPBERRY PI" class="image_projet"
+                        title="capture d'écran vidéo TIMELAPS RASPBERRY PI">
+                    <div class="image-overlay_projet">
+                        <div class="text_card_projet">
+                            <ul class="tags_projet">
+                                <li>Python</li>
+                                <li>Bash</li>
+                                <li>Cron</li>
+                            </ul>
+                            <p>Avec un Raspberry zero 2w et un script python, j’ai réalisé un time laps de mon jardin
+                                sur un an.</p>
+                            <p class="btn_lien-real">
+                                <a href="https://www.youtube.com/watch?v=mckbe0aMD4c" target="_blank">
+                                    <button>Vidéo sur Youtube </button>
+                                </a>
+                                <a href="https://gitlab.com/Naukogha/timelaps-raspberry" target="_blank">
+                                    <button>Code sur Git</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="grid_overlay">
-            <h3>RUNNING DEAD (en cours)</h3>
-            <div class="container">
-                <img src="images/images_projets/RunningDead.png" alt="TIMELAPS RASPBERRY PI " class="image">
-                <div class="overlay">
-                    <div class="text">
-                        <ul class="tags">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Java Script</li>
-                        </ul>
-                        <p>Application d'entraînement pour course d’orientation, simulant des sprints chronométrés déclenchés aléatoirement. </p>
-                        <p class="btn_lien-real">
-                            <a href="https://github.com/Marielef291/RunningDead" target="_blank">
-                                <button>Code sur Git</button>
-                            </a>
-                            <a href="https://marielef291.github.io/RunningDead/" target="_blank">
-                                <button>Démo</button>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            
+        </section>
 
     </main>
 
     <footer>
         <p>&copy; 2024 Marie Lefebvre. Tous droits réservés.</p>
         <div class="iconesLiens">
-            <a href="mailto:marie.lefebvre291@gmail.com"><img src="images/icones/email_white.png" alt="m'envoyer un e-mail" class="icones-contact"></a>
-            <a href="https://github.com/Marielef291" target="_blank"><img src="images/icones/signe-github_white.png" alt="Lien vers mon git hub" class="icones-contact"></a>
-            <a href="https://www.linkedin.com/in/marie-lefebvre291/" target="_blank"><img src="images/icones/linkedin_white.png" alt="Voir ma page linkedin" class="icones-contact"></a>
+            <a href="mailto:marie.lefebvre291@gmail.com"><img src="assets/images/icones/email_white.png"
+                    alt="m'envoyer un e-mail" class="icones-contact" title="m'envoyer un e-mail"></a>
+            <a href="https://github.com/Marielef291" target="_blank"><img src="assets/images/icones/signe-github_white.png"
+                    alt="Lien vers mon git hub" class="icones-contact" title="Lien vers mon git hub"></a>
+            <a href="https://www.linkedin.com/in/marie-lefebvre291/" target="_blank"><img
+                    src="assets/images/icones/linkedin_white.png" alt="Voir ma page linkedin" class="icones-contact"
+                    title="Voir ma page linkedin"></a>
         </div>
     </footer>
 
 </body>
-
