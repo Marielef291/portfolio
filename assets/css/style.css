@@ -863,6 +863,10 @@ footer{
 
 /* pour petit téléphone */
 @media all and (max-width : 560px){
+    #retourPhone {
+        display: block;
+    }
+    
     .titreHeader{
         font-size: 30pt;
     }
