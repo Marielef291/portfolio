@@ -214,7 +214,7 @@ header{
 #photoProfil{
     border-radius: 50%;
     width: 100%; /* Faites en sorte que la largeur soit de 100% par rapport à son conteneur */
-    height: 100%; /* Ajustez automatiquement la hauteur pour maintenir les proportions de l'image */
+     height: auto; /*Ajustez automatiquement la hauteur pour maintenir les proportions de l'image */
     align-self: center;
     grid-column: 1/2;
     grid-row: 1/3;
