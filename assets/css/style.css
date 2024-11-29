@@ -140,7 +140,7 @@ header{
 }
 
 .image-header {
-    background: url('../images/84825071_m.jpg') center top no-repeat;
+    background: url('../images/header_1920.jpg') center top no-repeat;
     background-size: cover; /* Utilisez cover pour que l'image couvre entièrement la zone */
     opacity: 0.5;
     grid-row: 1/3;
@@ -214,7 +214,7 @@ header{
 #photoProfil{
     border-radius: 50%;
     width: 100%; /* Faites en sorte que la largeur soit de 100% par rapport à son conteneur */
-    height: auto; /* Ajustez automatiquement la hauteur pour maintenir les proportions de l'image */
+    height: 100%; /* Ajustez automatiquement la hauteur pour maintenir les proportions de l'image */
     align-self: center;
     grid-column: 1/2;
     grid-row: 1/3;
@@ -280,6 +280,7 @@ header{
 
 .icoLangage{
     height: 50px;
+    width: auto;
 }
 
 /* ######### PARTIE PARCOURS ############ */
@@ -687,7 +688,8 @@ footer{
 @media all and (max-width : 1025px){
     /* header */
     .image-header {
-        margin-top: -20vh;
+        background: url('../images/header_1024.jpg') center top no-repeat;
+        margin-top: -50vh;
     }
 
     h1{
@@ -764,6 +766,8 @@ footer{
 @media all and (max-width : 767px){
 /* header */
     .image-header {
+        background: url('../images/header_768.jpg') center top no-repeat;
+        /* margin-top: -90vh; */
         grid-row: 1/2;
         grid-column: 1/2;
         margin-top: 0;
